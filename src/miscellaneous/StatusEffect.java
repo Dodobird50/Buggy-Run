@@ -1,0 +1,5 @@
+package miscellaneous;
+
+public enum StatusEffect {
+	POISON, BLINDNESS, TIME_DILATION, TIME_CONTRACTION, DOUBLE_COINS, INVINCIBILITY;
+}
