@@ -238,11 +238,11 @@ public class Player extends ArrayList<PlayerRectangle> implements ItemOnScreen {
 		this.isAlive = isAlive;
 	}
 
-	public boolean setUnderPoisonEffect( boolean isUnderDrowsinessEffect ) {
-		if ( isUnderInvincibilityEffect && isUnderDrowsinessEffect )
+	public boolean setUnderPoisonEffect( boolean isUnderPoisonEffect ) {
+		if ( isUnderInvincibilityEffect && isUnderPoisonEffect )
 			return false;
-		this.isUnderPoisonEffect = isUnderDrowsinessEffect;
-		if ( isUnderDrowsinessEffect ) {
+		this.isUnderPoisonEffect = isUnderPoisonEffect;
+		if ( isUnderPoisonEffect ) {
 			if ( size() > 1 ) {
 				for ( int i = 1; i < size(); ++i )
 					get( i ).setFill( Color.RED );
